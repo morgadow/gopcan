@@ -8,6 +8,11 @@ import (
 
 func main() {
 
+	fmt.Println("Running CLI examples:")
+	example_cli()
+
+	fmt.Println("Running normal examples in main file:")
+
 	// // check attached channels
 	// status, amountChannels, err := pcan.AttachedChannelsCount()
 	// if status != pcan.PCAN_ERROR_OK || err != nil {

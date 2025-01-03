@@ -1,10 +1,10 @@
 # gopcan
 
 A Golang CAN Bus interface for the PEAK systems CAN hardware (PCAN).
-This basically serves as an wrapper for the drivers usable as .dll or .so files. 
+This basically serves as an wrapper for the drivers usable as .dll or .so files.
 
 ## Examples
-Following code samples can be used for clarification. All examples can be found in the example file. 
+Following code samples can be used for clarification. All examples can be found in the example file.
 
 ```golang
 	// check attached channels
@@ -107,3 +107,15 @@ Following code samples can be used for clarification. All examples can be found 
 	}
 
 ```
+
+## Changelog
+
+- v1.0.0:
+	- PCAN dll interface for windows to send and receive CAN messages and setup basic parameter
+	- Known Issues:
+		- resetting CAN not working
+		- hardware does not receive messages
+		- reading attached channels creates null pointer exception
+	- Small CLI example file for testing purposes
+
+
