@@ -64,7 +64,7 @@ func LoadAPI() error {
 		return fmt.Errorf("invalid operating system. change compile option to match %v", runtime.GOOS)
 	}
 
-	libHandle, err := syscall.Load("libpcanbasic.so")
+	libHandle, err := unix.Dlopen("libpcanbasic.so", unix.RTLD_LAZY)
 	if err != nil {
 		return errors.New("could not load library")
 	}
