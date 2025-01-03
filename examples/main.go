@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	// check attached channels
+	// // check attached channels
 	// status, amountChannels, err := pcan.AttachedChannelsCount()
 	// if status != pcan.PCAN_ERROR_OK || err != nil {
 	// 	fmt.Printf("Error while checking for PCAN channels: Status: %X, Error: %v\n", status, err)
