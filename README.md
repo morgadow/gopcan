@@ -3,6 +3,10 @@
 A Golang CAN Bus interface for the PEAK systems CAN hardware (PCAN).
 This basically serves as an wrapper for the drivers usable as .dll or .so files.
 
+> Note: This is code i use in some project, but this is not tested well and definetly not well under operating systems apart from windows!
+> Please make sure everything you are using is checked and tested well! 
+> If you find any issues, please let me know or directly give me a pull request to get rid of all issues!
+
 ## Examples
 Following code samples can be used for clarification. All examples can be found in the example file.
 
