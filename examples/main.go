@@ -8,6 +8,22 @@ import (
 
 func main() {
 
+	// check attached channels
+	// status, amountChannels, err := pcan.AttachedChannelsCount()
+	// if status != pcan.PCAN_ERROR_OK || err != nil {
+	// 	fmt.Printf("Error while checking for PCAN channels: Status: %X, Error: %v\n", status, err)
+	// 	return
+	// }
+	// fmt.Printf("Found %v channels\n", amountChannels)
+
+	// // check attached channels
+	// channels, err := pcan.AttachedChannels()
+	// if err != nil {
+	// 	fmt.Printf("Error while checking for PCAN channels: Error: %v\n", err)
+	// 	return
+	// }
+	// fmt.Printf("Found %v channels\n", channels)
+
 	// connect to new channel
 	status, bus, err := pcan.InitializeBasic(pcan.PCAN_USBBUS1, pcan.PCAN_BAUD_500K)
 	if status != pcan.PCAN_ERROR_OK || err != nil {
